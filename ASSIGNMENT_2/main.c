@@ -170,8 +170,11 @@ static int test_mass_storage(struct usb_device *device, uint8_t endpoint_in, uin
 		
 	max_lba = be_to_int32(&buffer[0]);
 	block_size = be_to_int32(&buffer[4]);
+
 	device_size = ((long)(max_lba+1))*block_size/(1024*1024);
+
 	printk("   Max LBA: %x, Block Size: %x ( PD SIZE %d MB)\n", max_lba, block_size, device_size);
+
 	printk("PD Size is %d MB", device_size);
 	
 	
