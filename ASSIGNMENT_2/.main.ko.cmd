@@ -1,1 +1,0 @@
-cmd_/home/ketan/ket@nn/Assignment_DD_2/main.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/ketan/ket@nn/Assignment_DD_2/main.ko /home/ketan/ket@nn/Assignment_DD_2/main.o /home/ketan/ket@nn/Assignment_DD_2/main.mod.o ;  true
